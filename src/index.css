@@ -1,0 +1,98 @@
+html,
+body {
+  font-family: "Ubuntu", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  background-color: #EFF3F6;
+  /* background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../public/hero1.webp); */
+  color:#000;
+  /* background-color: #292929; */
+}
+#jivo_container {
+  display: none !important;
+}
+#recaptcha-container {
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+}
+
+.paystack-button {
+  font-weight: bold;
+  position: relative;
+  /* background-image: linear-gradient(#b64616,#E3581C); */
+  cursor: pointer;
+  border-radius: 24px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  background-color: #E3581C;
+  /* font-weight: bold; */
+  color: #fff;
+  border: none;
+
+  width: 100%;
+  height: 45px;
+  /* margin-top: 40px; */
+}
+/* .paystack-button::after{
+ 
+    border-radius: 12px;
+    content: "";
+    position:absolute;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: 50%;
+    background:
+      linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.2));
+} */
+
+.css-1yqg0kk-MuiStepLabel-label.MuiStepLabel-alternativeLabel {
+  margin-top: 0px !important;
+}
+
+/* img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 500px;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  img {
+    max-height: 300px;
+  }
+} */
+
+.price-tag {
+  background-color: #E3581C;
+  border-radius: 12px;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.price-tag::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 0);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #E3581C;
+}
+
+[class$=api-load-alpha-banner] {
+  display: none;
+}
