@@ -82,8 +82,8 @@ const prodasher = {
   },
   about: {
     texts: [
-      "Welcome to Wuda Lounge, a family-owned and operated restauran that offers delicious and fresh meals for dine-in and delivery. We believe in using only the finest ingredients and preparing each dish to perfection, ensuring that every bite is memorable. From classic comfort foods to contemporary cuisine, we have something for everyone.",
-      "Let us bring our passion for food to your door, and experience the taste of Wuda Lounge in the comfort of your own home.",
+      "Welcome to proDasher, a family-owned and operated food delivery business that offers delicious and fresh meals for delivery. We believe in using only the finest ingredients and preparing each dish to perfection, ensuring that every bite is memorable. From classic comfort foods to contemporary cuisine, we have something for everyone.",
+      "Let us bring our passion for food to your door, and experience the taste of proDasher in the comfort of your own home.",
     ],
     photos: [
       "https://res.cloudinary.com/dkxrwzp2d/image/upload/v1675981586/IMG-0735_g5fyvp.jpg",

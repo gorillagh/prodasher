@@ -126,25 +126,48 @@ const App = () => {
         <link
           rel="icon"
           type="image/png"
-          href={`/${restaurantDetails.path}/favicon-32x32.png`}
+          href={
+            restaurantDetails.name === "proDasher"
+              ? "/prodasher/favicon-32x32.png"
+              : `/${restaurantDetails.path}/favicon-32x32.png`
+          }
           sizes="32x32"
         />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href={`/${restaurantDetails.path}/apple-touch-icon.png`}
+          href={
+            restaurantDetails.name === "proDasher"
+              ? "/prodasher/apple-touch-icon.png"
+              : `/${restaurantDetails.path}/apple-touch-icon.png`
+          }
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href={`/${restaurantDetails.path}/favicon-16x16.png`}
+          href={
+            restaurantDetails.name === "proDasher"
+              ? "/prodasher/favicon-16x16.png"
+              : `/${restaurantDetails.path}/favicon-16x16.png`
+          }
         />
         <link
           rel="manifest"
-          href={`/${restaurantDetails.path}/site.webmanifest`}
+          href={
+            restaurantDetails.name === "proDasher"
+              ? "/prodasher/site.webmanifest"
+              : `/${restaurantDetails.path}/site.webmanifest`
+          }
         />
-        <link rel="icon" href={`/${restaurantDetails.path}/favicon.ico`} />
+        <link
+          rel="icon"
+          href={
+            restaurantDetails.name === "proDasher"
+              ? "/prodasher/favicon.ico"
+              : `/${restaurantDetails.path}/favicon.ico`
+          }
+        />
       </Helmet>
 
       <Routes>

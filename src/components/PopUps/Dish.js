@@ -262,9 +262,9 @@ const Dish = (props) => {
         const fileObj = new File([blob], "image.png", { type: blob.type });
         console.log("File", fileObj);
         await navigator.share({
-          title: "Wuda Lounge",
-          text: `Get a delicious ${dish.name} for just ${dish.price} from Wuda Lounge`,
-          url: "https://www.wudalounge.com",
+          title: props.restaurantDetails.name,
+          text: `Get a delicious ${dish.name} for just ${dish.price} from ${props.restaurantDetails.name}.`,
+          url: props.restaurantDetails.website,
           files: [fileObj],
         });
         console.log("Share successful");
@@ -274,7 +274,7 @@ const Dish = (props) => {
     } else {
       console.log("Share not supported, using fallback method");
       // Use another share method here, such as a third-party share dialog or clipboard copy
-      const fallbackUrl = "https://www.wudalounge.com";
+      const fallbackUrl = props.restaurantDetails.website;
       try {
         await navigator.clipboard.writeText(fallbackUrl);
         console.log("URL copied to clipboard");
@@ -283,7 +283,7 @@ const Dish = (props) => {
         console.error("Clipboard write failed:", error);
         // Use a share dialog here if clipboard write fails
         window.open(
-          `mailto:?subject=Check out Wuda Lounge&body=${fallbackUrl}`
+          `mailto:?subject=Check out ${props.restaurantDetails.name}&body=${fallbackUrl}`
         );
       }
     }

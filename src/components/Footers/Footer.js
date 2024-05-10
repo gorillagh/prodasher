@@ -38,6 +38,7 @@ const Footer = (props) => {
       <Typography variant="body2" align="center" sx={{ my: 4 }}>
         {"© "}
         <Link
+          textTransform={props.restaurantDetails.name === "proDasher" && "none"}
           color="#f6a60b"
           text={`${props.restaurantDetails.name}`}
           to="/"

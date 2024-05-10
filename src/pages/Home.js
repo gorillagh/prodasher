@@ -558,6 +558,9 @@ const Home = (props) => {
             setCart={setCart}
             setAlertSnackbar={setAlertSnackbar}
             setOpenPhoneNumber={setOpenPhoneNumber}
+            selectedBranch={selectedBranch}
+            setSelectedBranch={setSelectedBranch}
+            restaurantDetails={props.restaurantDetails}
             // ref={targetRef}
           />
         ) : (
