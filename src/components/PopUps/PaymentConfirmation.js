@@ -67,7 +67,7 @@ const PaymentConfirmation = (props) => {
   };
 
   const paystackButtonProps = {
-    email: props.user.email ? props.user.email : "tsekowudalounge@gmail.com",
+    email: props.user.email ? props.user.email : "professionaldasher@gmail.com",
     amount: props.finalTotalAfterDiscount * 100,
     currency: "GHS",
     metadata: {
