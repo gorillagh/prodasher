@@ -58,26 +58,32 @@ const prodasher = {
   menu: {
     categories: [
       {
-        name: "chicken",
-        description: "Chicken Dishes",
+        name: "meat-based",
+        description: "Protein-rich dishes",
         dishes: [],
       },
       {
-        name: "pork",
-        description: "Pork Dishes",
+        name: "seafood",
+        description: "Fresh ocean flavors",
         dishes: [],
       },
       {
-        name: "tilapia",
-        description: "Tilapia Dishes",
+        name: "vegan",
+        description: "Plant-based delights",
         dishes: [],
       },
-      { name: "juice", description: "Juices", dishes: [] },
+
       {
-        name: "special",
-        description: "Special Picks",
+        name: "beverages",
+        description: "Refreshing drink options",
         dishes: [],
       },
+      {
+        name: "appetizers",
+        description: "Small tasty bites",
+        dishes: [],
+      },
+      { name: "desserts", description: "Sweet indulgent treats", dishes: [] },
     ],
   },
   about: {
